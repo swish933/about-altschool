@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+	</head>
+	<body>
+		<a href="#main" class="skip-to-content">Skip to content</a>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a aria-current="page" href="/register.html">Sign up</a></li>
+			</ul>
+		</nav>
+		<main>
+			<form method="POST">
+				<p>
+					<label for="firstname"> First Name</label>
+					<input
+						type="text"
+						name="firstname"
+						id="firstname"
+						placeholder="Enter first name"
+						required
+					/>
+
+					<label for="lastname">Last name</label>
+					<input
+						type="text"
+						name="lastname"
+						id="lastname"
+						placeholder="Enter last name"
+						required
+					/>
+				</p>
+				<p>
+					<label for="gender">Gender</label>
+					<select name="gender" id="gender" required>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						<option value="other">Other</option>
+					</select>
+
+					<label for="dob">Date of Birth</label>
+					<input type="date" name="dob" id="dob" required />
+				</p>
+
+				<p>
+					<label for="email">Email Address</label>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Enter email address"
+						required
+					/>
+
+					<label for="education-level">Education level</label>
+					<select name="education-level" id="education-level" required>
+						<option value="">Select education level</option>
+						<option value="primary">Primary school</option>
+						<option value="secondary">Secondary school</option>
+						<option value="university">University</option>
+					</select>
+				</p>
+
+				<p>
+					<label for="country">Country</label>
+					<select name="country" id="country" required>
+						<option value="">Select Country</option>
+						<option value="Kenya">Kenya</option>
+						<option value="Malawi">Malawi</option>
+						<option value="Nigeria">Nigeria</option>
+						<option value="South Africa">South Africa</option>
+					</select>
+
+					<label for="state">State/City of Residence</label>
+					<input
+						type="text"
+						name="state"
+						id="state"
+						placeholder="Enter your state of residence"
+					/>
+				</p>
+
+				<p>
+					<label for="employment-status">Employment Status</label>
+					<select name="employment-status" id="employment-status" required>
+						<option value="">Select Emplyment status</option>
+						<option value="employed">Employed</option>
+						<option value="self-employed">Self-employed</option>
+						<option value="unemployed">Unemployed</option>
+					</select>
+
+					<label for="phone-number">Phone Number </label>
+					<input
+						type="tel"
+						name="phone-number"
+						id="phone-number"
+						placeholder="09038760638"
+						required
+					/>
+				</p>
+
+				<p>
+					<label for="school">Choose School</label>
+					<select name="school" id="school" required>
+						<option value="">Select School</option>
+						<option value="data">School of Data</option>
+						<option value="engineering">School of Engineering</option>
+						<option value="product">School of Product</option>
+					</select>
+
+					<label for="course">Choose Course of Study Status</label>
+					<select name="course" id="course" required>
+						<option value="">Select Course of Study</option>
+						<option value="front-end">Front end engineering</option>
+						<option value="back-end">Back end engineering</option>
+					</select>
+				</p>
+
+				<p>
+					By clicking proceed, I agree to <a href="#">Terms of Use</a> and
+					acknowledge that I have read the <a href="#">Privacy Policy</a>
+				</p>
+
+				<input type="submit" value="Proceed" />
+			</form>
+		</main>
+	</body>
+</html>
